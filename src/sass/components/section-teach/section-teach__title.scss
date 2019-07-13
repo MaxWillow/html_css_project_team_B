@@ -1,0 +1,5 @@
+.section-teach__title { 
+  @extend %title;
+  display: flex;
+  align-items: center;
+}
