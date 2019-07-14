@@ -4,8 +4,6 @@
         padding: 30px 35px;
     }
   &__title {
-      display: flex;
-      align-items: center;
     @extend %title;
     &--span {
       display: flex;
