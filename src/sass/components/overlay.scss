@@ -1,17 +1,18 @@
 .overlay {
     position: absolute;
+    z-index: -1;
+    opacity: 0;
     width: 100%;
-    height: 100%;
+    height: 0%;
     top: 0;
     left: 0;
-    display: none;
+    display: block;
     background-color: $primary-qoal-bg;
-    padding-top: 16px;
     padding-bottom: 106px;
+}
 
-    @media (min-width: 768px) {
-        padding-top: 28px;
-    }
+.overlay * {
+    opacity: 0;
 }
 
 .overlay__header-wrap {
@@ -75,5 +76,17 @@
 }
 
 .overlay-open {
-    display: block;
+    transition: all .4s linear;
+    z-index: 1;
+    opacity: 1;
+    height: 100%;
+    padding-top: 16px;
+    @media (min-width: 768px) {
+        padding-top: 28px;
+    }
+}
+
+.overlay-open *{
+    transition: all 1s linear .4s;
+    opacity: 1;
 }

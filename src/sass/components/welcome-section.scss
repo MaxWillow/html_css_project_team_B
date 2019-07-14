@@ -1,5 +1,6 @@
 .welcome-section {
     position: relative;
+    padding-top: 16px;
     padding-bottom: 52px;
     background-image: url(../../images/welcome-banner.png);
     background-repeat: no-repeat;
@@ -11,6 +12,7 @@
     }
     
     @media (min-width: 768px) {
+        padding-top: 28px;
         padding-bottom: 38px;
     }
     

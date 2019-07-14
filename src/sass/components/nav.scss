@@ -1,7 +1,5 @@
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @extend %dfsb;
 }
 
 .nav__list {
@@ -10,9 +8,9 @@
 
     @media (min-width: 1200px) {
         display: flex;
-        flex-basis: 842px;
         justify-content: space-between;
         align-items: center;
+        flex-basis: 842px;
     }
 }
 
