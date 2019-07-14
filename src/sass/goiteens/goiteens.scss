@@ -24,55 +24,74 @@
     }
   }
   &__list{
-      
+      &--li{
+        border-radius: 6px;
+        @extend %list;
+        @media (min-width: 768px) {
+          &:nth-child(4n+1){
+              border-right: 1px dashed $border-color;
+              border-bottom: 1px dashed $border-color;
+          }
+          &:nth-child(4n+4){
+              border-left: 1px dashed $border-color;
+              border-top: 1px dashed $border-color;
+          }
+      }
+      @media (min-width: 1200px) {
+          &:nth-child(4n+1){
+              border: none;
+          }
+          &:nth-child(4n+4){
+              border: none;
+          }
+          &:not(:last-child) {
+              border-right: 1px dashed $border-color;
+          } 
+      }
+      }
     @media (min-width: 768px) {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
     }
   }
+  &__link{
+    color: $primary-headline-color;
+    @extend %link;
+  }
   &__item {
-      margin-top: 20px;
+    margin-top: 20px;
     background: $bg-section-color;
     border-radius: 6px;
     width: 280px;
     padding: 24px 44px;
-    list-style: none;
     transition: background 1s;
     @media (min-width: 768px) {
         margin-top: 0;
-        width: 310px;
+        width: 308px;
         padding: 50px 44px;
-        &:nth-child(4n+1){
-            border-right: 1px dashed $border-color;
-            border-bottom: 1px dashed $border-color;
-        }
-        &:nth-child(4n+4){
-            border-left: 1px dashed $border-color;
-            border-top: 1px dashed $border-color;
-        }
     }
     @media (min-width: 1200px) {
         margin-top: 0;
-        width: 260px;
-        padding: 50px 20px;
-        &:nth-child(4n+1){
-            border: none;
-        }
-        &:nth-child(4n+4){
-            border: none;
-        }
-        &:not(:last-child) {
-            border-right: 1px dashed $border-color;
-          }
-          
+        width: 258px;
+        padding: 50px 20px;          
     }
+    cursor: pointer;
     &:hover {
         background: $primary-accent-color;
     }
     &:hover &--paragraph,
     &:hover &--year,
     &:hover &--arrow{
+        color: $primary-white-color;
+        fill: $primary-white-color;
+    }
+    .goiteens__link:focus & {
+        background: $primary-accent-color;
+    }
+    .goiteens__link:focus &--paragraph,
+    .goiteens__link:focus &--year,
+    .goiteens__link:focus &--arrow{
         color: $primary-white-color;
         fill: $primary-white-color;
     }
