@@ -4,7 +4,11 @@
         padding: 30px 35px;
     }
   &__title {
+    margin-bottom: 0.5em;
     @extend %title;
+    @media (min-width: 768px) {
+      @include lh (33, 33);
+    }
     &--span {
       display: flex;
       width: 30px;
