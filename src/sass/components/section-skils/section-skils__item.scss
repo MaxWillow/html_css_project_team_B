@@ -3,6 +3,10 @@
   border-bottom-left-radius: 10%; 
   margin-bottom: 15px;
   padding: 18px;
+
+  &:last-child { 
+    margin: 0;
+  }
 }
 
 .section-skils__item--orange { 

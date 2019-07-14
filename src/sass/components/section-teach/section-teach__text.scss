@@ -1,7 +1,4 @@
 .section-teach__text { 
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 14px;
+  @extend %text;
   line-height: 1.7;
-  font-weight: 400;
-  color: $primary-text-color;
 }

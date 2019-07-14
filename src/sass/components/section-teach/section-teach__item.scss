@@ -12,10 +12,10 @@
     background-size: 35px 35px;
     background-repeat: no-repeat;
     background-position: center;
-    @media(min-width: 1200px) {
-      width: 100px;
-      height: 100px;
-    }
+  }
+
+  &:last-child { 
+    margin: 0;
   }
 }
 
