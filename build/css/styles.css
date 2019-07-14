@@ -402,27 +402,27 @@ img {
 
 @font-face {
   font-family: "Open Sans Semi";
-  src: url("../../fonts/OpenSans-Semi-Bold.woff2") format("woff2"), url("../../fonts/OpenSans-Semi-Bold.woff") format("woff");
+  src: url("../fonts/OpenSans-Semi-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Semi-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans Bold";
-  src: url("../../fonts/OpenSans-Bold.woff2") format("woff2"), url("../../fonts/OpenSans-Bold.woff") format("woff");
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans Extra";
-  src: url("../../fonts/OpenSans-Extra-Bold.woff2") format("woff2"), url("../../fonts/OpenSans-Extra-Bold.woff") format("woff");
+  src: url("../fonts/OpenSans-Extra-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Extra-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Ubuntu Regular";
-  src: url("../../fonts/Ubuntu-Regular.woff2") format("woff2"), url("../../fonts/Ubuntu-Regular.woff") format("woff");
+  src: url("../fonts/Ubuntu-Regular.woff2") format("woff2"), url("../fonts/Ubuntu-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Ubuntu Bold";
-  src: url("../../fonts/Ubuntu-Bold.woff2") format("woff2"), url("../../fonts/Ubuntu-Bold.woff") format("woff");
+  src: url("../fonts/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu-Bold.woff") format("woff");
 }
 
 .nav__list,
@@ -678,7 +678,7 @@ svg {
   position: relative;
   padding-top: 16px;
   padding-bottom: 52px;
-  background-image: url(../../images/welcome-banner.png);
+  background-image: url(../images/welcome-banner.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1543,7 +1543,7 @@ svg {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .welcome-section {
-    background-image: url(../../images/welcome-banner@2x.png);
+    background-image: url(../images/welcome-banner@2x.png);
   }
 }
 
