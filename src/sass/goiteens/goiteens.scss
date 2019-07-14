@@ -54,6 +54,7 @@
     }
   }
   &__link{
+    outline: none;
     color: $primary-headline-color;
     @extend %link;
   }
